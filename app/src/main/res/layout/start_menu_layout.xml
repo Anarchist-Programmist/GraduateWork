@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/background_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        app:srcCompat="@drawable/background" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/dialog_box"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="16dp"
+            android:contentDescription="Dialog Bubble"
+            app:layout_constraintDimensionRatio="4:3"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/dialog_box" />
+
+        <!-- Робот -->
+        <ImageView
+            android:id="@+id/guide_version1"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="16dp"
+            android:contentDescription="Robot"
+            app:layout_constraintDimensionRatio="1:1.2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/dialog_box"
+            app:srcCompat="@drawable/guide_version1" />
+
+        <!-- Стрелка влево -->
+        <ImageView
+            android:id="@+id/left_arrow"
+            android:layout_width="90dp"
+            android:layout_height="70dp"
+            android:layout_marginTop="8dp"
+            android:contentDescription="Arrow Left"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/dialog_box"
+            app:srcCompat="@drawable/left_arrow" />
+
+        <!-- Стрелка вправо -->
+        <ImageView
+            android:id="@+id/right_arrow"
+            android:layout_width="90dp"
+            android:layout_height="70dp"
+            android:layout_marginTop="8dp"
+            android:contentDescription="Arrow Right"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/dialog_box"
+            app:srcCompat="@drawable/right_arrow" />
+
+        <!-- Текст в облаке -->
+        <TextView
+            android:id="@+id/guide_text"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:maxLines="5"
+            android:padding="16dp"
+            android:textColor="@android:color/black"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toBottomOf="@id/dialog_box"
+            app:layout_constraintEnd_toEndOf="@id/dialog_box"
+            app:layout_constraintStart_toStartOf="@id/dialog_box"
+            app:layout_constraintTop_toTopOf="@id/dialog_box" />
+
+        <!-- Кнопка Начать -->
+        <Button
+            android:id="@+id/open_new_layout_button"
+            android:layout_width="0dp"
+            android:layout_height="70dp"
+            android:layout_marginEnd="8dp"
+            android:backgroundTint="#000000"
+            android:text="Начать"
+            android:textColor="#FFFFFF"
+            android:textSize="24sp"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/Exit"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <!-- Кнопка Выйти -->
+        <Button
+            android:id="@+id/Exit"
+            android:layout_width="0dp"
+            android:layout_height="70dp"
+            android:layout_marginStart="8dp"
+            android:backgroundTint="#000000"
+            android:onClick="clickexit"
+            android:text="Выйти"
+            android:textColor="#FFFFFF"
+            android:textSize="24sp"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/open_new_layout_button" />
+
+        <Button
+            android:id="@+id/skip_button"
+            android:layout_width="wrap_content"
+            android:layout_height="70dp"
+            android:backgroundTint="#000000"
+            android:text="Пропустить диалог"
+            android:textColor="#FFFFFF"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</RelativeLayout>

@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ImageView
+        android:id="@+id/background_shelf"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/shelf_background" />
+
+    <!-- Контейнер всего содержимого -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <!-- Верхняя панель с кнопкой -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/back"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:backgroundTint="#000000"
+                android:text="Назад"
+                android:textColor="#FFFFFF"
+                android:textSize="24sp" />
+        </LinearLayout>
+
+        <!-- Пространство с изображениями (ограничено по высоте, чтобы не выходить за светлую зону) -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp">
+
+            <!-- 3 ряда изображений -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1.5"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/exhibit_1"
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
+                    android:layout_margin="15dp"
+                    android:src="@drawable/plug" />
+
+                <ImageView
+                    android:id="@+id/exhibit_2"
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
+                    android:layout_margin="15dp"
+                    android:src="@drawable/plug" />
+
+                <ImageView
+                    android:id="@+id/exhibit_3"
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
+                    android:layout_margin="15dp"
+                    android:src="@drawable/plug" />
+
+                <ImageView
+                android:id="@+id/exhibit_4"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:layout_margin="15dp"
+                android:src="@drawable/plug" />
+
+                <ImageView
+                    android:id="@+id/exhibit_5"
+                    android:layout_width="90dp"
+                    android:layout_height="100dp"
+                    android:layout_margin="15dp"
+                    android:src="@drawable/plug" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2.5"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/exhibit_6"
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
+                    android:layout_margin="15dp"
+                    android:src="@drawable/plug" />
+
+                <ImageView
+                    android:id="@+id/exhibit_7"
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
+                    android:layout_margin="15dp"
+                    android:src="@drawable/plug" />
+
+                <ImageView
+                    android:id="@+id/exhibit_8"
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
+                    android:layout_margin="15dp"
+                    android:src="@drawable/plug" />
+
+                <ImageView
+                    android:id="@+id/exhibit_9"
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
+                    android:layout_margin="15dp"
+                    android:src="@drawable/plug" />
+
+                <ImageView
+                    android:id="@+id/exhibit_10"
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
+                    android:layout_margin="15dp"
+                    android:src="@drawable/plug" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1.5"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/exhibit_11"
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
+                    android:layout_margin="15dp"
+                    android:src="@drawable/plug" />
+
+                <ImageView
+                    android:id="@+id/exhibit_12"
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
+                    android:layout_margin="15dp"
+                    android:src="@drawable/plug" />
+
+                <ImageView
+                    android:id="@+id/exhibit_13"
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
+                    android:layout_margin="15dp"
+                    android:src="@drawable/plug" />
+
+                <ImageView
+                    android:id="@+id/exhibit_14"
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
+                    android:layout_margin="15dp"
+                    android:src="@drawable/plug" />
+
+                <ImageView
+                    android:id="@+id/exhibit_15"
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
+                    android:layout_margin="15dp"
+                    android:src="@drawable/plug" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp" />
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">GraduateWork</string>
+    <string name="Start">Начать</string>
+    <string name="Exit">Выход</string>
+</resources>
